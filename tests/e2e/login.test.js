@@ -14,5 +14,5 @@ test('Simuler une connexion avec un utilisateur valide', async ({ page }) => {
     await page.fill('input[name="password"]', 'azertyuiop');
 
     await page.click('button[type="submit"]');
-    await expect(page).toHaveUrl('/dashboard');
+    await expect(page).toHaveURL('/dashboard');
 })
