@@ -7,7 +7,14 @@ function estPair(n) {
 }
 
 function factorielle(n) {
+    if (n < 0) throw new Error("Nombre négatif interdit");
     return n === 0 ? 1 : n * factorielle(n - 1);
 }
 
-module.exports = { somme, estPair, factorielle };
+function calculerEtAfficherFactorielle(n, logFunction) {
+    const result = factorielle(n);
+    logFunction(`La factorielle de ${n} est ${result}`);
+    return result;
+}
+
+module.exports = { somme, estPair, factorielle, calculerEtAfficherFactorielle };
