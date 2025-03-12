@@ -1,4 +1,4 @@
-const { somme, estPair, factorielle, calculerEtAfficherFactorielle, inverse } = require("./utils");
+const { somme, estPair, factorielle, calculerEtAfficherFactorielle, inverse } = require("../../utils");
 
 test("somme(2, 3) doit retourner 5", () => {
     expect(somme(2, 3)).toBe(5);
