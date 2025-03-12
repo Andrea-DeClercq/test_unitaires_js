@@ -17,8 +17,8 @@ function calculerEtAfficherFactorielle(n, logFunction) {
     return result;
 }
 
-function inverse() {
-
+function inverse(chaine) {
+    return chaine.split("").reverse().join("");
 }
 
 module.exports = { somme, estPair, factorielle, calculerEtAfficherFactorielle, inverse };
