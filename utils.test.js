@@ -1,4 +1,4 @@
-const { somme, estPair, factorielle, calculerEtAfficherFactorielle } = require("./utils");
+const { somme, estPair, factorielle, calculerEtAfficherFactorielle, inverse } = require("./utils");
 
 test("somme(2, 3) doit retourner 5", () => {
     expect(somme(2, 3)).toBe(5);
@@ -31,3 +31,21 @@ test("calculerEtAfficherFactorielle appelle la fonction log", () => {
     expect(mockLog).toHaveBeenCalledTimes(1);
     expect(mockLog).toHaveBeenCalledWith("La factorielle de 5 est 120");
 });
+
+// TDD
+
+test("inverse('hello') doit retourner 'olleh'", () => {
+    expect(inverse("hello")).toBe("olleh");
+});
+
+test("inverse('12345') doit retourner '54321'", () => {
+    expect(inverse("12345")).toBe("54321");
+});
+
+test("inverser('') doit retourner ''", () => {
+    expect(inverse("")).toBe("");
+});
+
+test("inverser('a') doit retourner 'a'", () => {
+    expect(inverse("a")).toBe("a");
+})

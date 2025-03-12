@@ -17,4 +17,8 @@ function calculerEtAfficherFactorielle(n, logFunction) {
     return result;
 }
 
-module.exports = { somme, estPair, factorielle, calculerEtAfficherFactorielle };
+function inverse() {
+
+}
+
+module.exports = { somme, estPair, factorielle, calculerEtAfficherFactorielle, inverse };
